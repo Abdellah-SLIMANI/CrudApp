@@ -40,6 +40,9 @@ namespace CrudApp
         private void button1_Click(object sender, EventArgs e)
         {
             WhatDidIJustClicked = "button1";
+            button2.Enabled = false;
+            button3.Enabled = false;
+            button4.Enabled = false;
         }
         private void button4_Click(object sender, EventArgs e)
         {
@@ -53,15 +56,24 @@ namespace CrudApp
 
         private void button5_Click(object sender, EventArgs e)
         {
+            SqlConnection connecting = new SqlConnection(@"Data Source=DESKTOP-QJQOIK3\MSSQLSERVER01;Initial Catalog=CrudApp;Integrated Security=True");
+            connecting.Open();
+
             if (WhatDidIJustClicked == "button4")
             {
-                SqlConnection connecting = new SqlConnection(@"Data Source=DESKTOP-QJQOIK3\MSSQLSERVER01;Initial Catalog=CrudApp;Integrated Security=True");
-                connecting.Open();
                 SqlCommand command = new SqlCommand("Delete [Table] where username=@Username", connecting);
                 command.Parameters.AddWithValue("@Username", textBox1.Text);
                 command.ExecuteNonQuery();
-                connecting.Close();
+
+            } else if(WhatDidIJustClicked == "button1")
+            {
+                SqlCommand command = new SqlCommand("insert into [Table] values (@Username,@Email,@password)", connecting);
+                command.Parameters.AddWithValue("@Username", textBox1.Text);
+                command.Parameters.AddWithValue("@Email", textBox2.Text);
+                command.Parameters.AddWithValue("@password", textBox3.Text);
+                command.ExecuteNonQuery();
             }
+            connecting.Close();
             WhatDidIJustClicked = "";
             initState();
         }
