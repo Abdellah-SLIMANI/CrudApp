@@ -1,0 +1,10 @@
+C:\Users\morsc\source\repos\CrudApp\CrudApp\bin\Debug\CrudApp.exe.config
+C:\Users\morsc\source\repos\CrudApp\CrudApp\bin\Debug\CrudApp.exe
+C:\Users\morsc\source\repos\CrudApp\CrudApp\bin\Debug\CrudApp.pdb
+C:\Users\morsc\source\repos\CrudApp\CrudApp\obj\Debug\CrudApp.csprojAssemblyReference.cache
+C:\Users\morsc\source\repos\CrudApp\CrudApp\obj\Debug\CrudApp.Form1.resources
+C:\Users\morsc\source\repos\CrudApp\CrudApp\obj\Debug\CrudApp.Properties.Resources.resources
+C:\Users\morsc\source\repos\CrudApp\CrudApp\obj\Debug\CrudApp.csproj.GenerateResource.cache
+C:\Users\morsc\source\repos\CrudApp\CrudApp\obj\Debug\CrudApp.csproj.CoreCompileInputs.cache
+C:\Users\morsc\source\repos\CrudApp\CrudApp\obj\Debug\CrudApp.exe
+C:\Users\morsc\source\repos\CrudApp\CrudApp\obj\Debug\CrudApp.pdb
